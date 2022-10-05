@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title> Casos </title>
+        <link href="css/style.css" rel="stylesheet" />
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
+        <style> 
+            .formsSF{
+                display:flex;
+                margin-left: 27%;
+                margin-right: 27%;
+                flex-direction: column;
+            }
+            .tituloContrate{
+            font-size: 4vh;
+            color:white;
+            }
+            .formsSF{
+                display:flex;
+                margin-left: 27%;
+                margin-right: 27%;
+                flex-direction: column;
+            }
+            .inputSF{
+                font-size: 3vh;
+                border-radius: 0.7vh;
+            }
+            .titleInputCaso{
+                font-size: 2.5vh;
+                display:flex;
+                align-items: left;
+            }
+            .enviarLeadSF{
+                font-size:3vh;
+                cursor:pointer;
+                background-color: #004651;
+                color: white;
+            }
+        </style>
+    </head>
+    <body background="img/plano4.jpg">
+
+    <header>
+        <div class="center">
+                
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="quem.html">Quem somos</a>
+                <a href="serv.html">Nossos serviços</a>
+                <a href="Form.html">Contrate</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" class="formsSF">
+    
+    <input type=hidden name="orgid" value="00D3t000005epfQ">
+    <input type=hidden name="retURL" value="file:///C:/Users/Felipe%20Lopes/Desktop/TopSun%20Energy%20-%20site/Form.html">
+    
+    <fieldset>
+        <label for="name" class="titleInputCaso">Nome do contato</label>
+        <input  id="name" maxlength="80" name="name" size="20" type="text" class="inputSF"/><br>
+        
+        <label for="company" class="titleInputCaso">Empresa</label>
+        <input  id="company" maxlength="80" name="company" size="20" type="text" class="inputSF"/><br>
+        
+        <label for="email" class="titleInputCaso">Email</label>
+        <input  id="email" maxlength="80" name="email" size="20" type="text" class="inputSF"/><br>
+        
+        <label for="phone" class="titleInputCaso">Telefone</label>
+        <input  id="phone" maxlength="40" name="phone" size="20" type="text" class="inputSF"/><br>
+        
+        <label for="subject" class="titleInputCaso">Assunto</label>
+        <input  id="subject" maxlength="80" name="subject" size="20" type="text" class="inputSF"/><br>
+        
+        <label for="description" class="titleInputCaso">Descrição</label>
+        <textarea name="description" class="inputSF"></textarea><br>
+    </fieldset>
+
+    <input type="submit" name="submit" class="enviarLeadSF">
+    
+    </form>
+    
